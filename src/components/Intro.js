@@ -6,7 +6,7 @@ function Intro({name, countrycode, temperature, description, icon, sunrise, suns
     <>
     <div className='flex flex-col justify-center items-center text-center my-10'>
         <div>
-            <h3 className='font-semibold text-3xl text-white mb-8'>{name}{countrycode}</h3>
+            <h3 className='font-semibold text-3xl text-white mb-8'>{name} {countrycode}</h3>
             <h3 className='font-bold text-2xl mb-8'>{temperature}&deg;C</h3>
             <h3 className='font-bold text-2xl text-white'>{description}</h3>
             <img className='w-full hover:scale-75 duration-500' src={`https://openweathermap.org/img/wn/${icon}@4x.png`} alt='icon'/>
